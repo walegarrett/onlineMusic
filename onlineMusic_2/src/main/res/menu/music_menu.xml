@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navMember1"
+            android:title="专辑中心"
+            />
+        <item
+            android:id="@+id/navEffect1"
+            android:title="音效中心"
+            />
+        <item
+            android:id="@+id/navSkin1"
+            android:title="皮肤中心"
+            />
+        <item
+            android:id="@+id/navFriends1"
+            android:title="音乐好友"
+            />
+        <item
+            android:id="@+id/navTools1"
+            android:title="音乐工具"
+            />
+    </group>
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/searchs"
+        android:icon="@drawable/search"
+        android:title="Search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share"
+        android:icon="@mipmap/share1"
+        android:title="Share"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/abc_vector_test"
+        android:title="设置"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/abc_vector_test"
+        android:title="退出音乐专辑APP"
+        app:showAsAction="never"
+        />
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$USER_HOME$/.gradle/wrapper/dists/gradle-6.1.1" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/exercise1" />
+            <option value="$PROJECT_DIR$/exercise1/psychological" />
+            <option value="$PROJECT_DIR$/exercise1/psychological_fragment" />
+            <option value="$PROJECT_DIR$/exercise2" />
+            <option value="$PROJECT_DIR$/exercise2/filmrecyclerview" />
+            <option value="$PROJECT_DIR$/exercise2/music" />
+            <option value="$PROJECT_DIR$/exercise3" />
+            <option value="$PROJECT_DIR$/exercise3/music3" />
+            <option value="$PROJECT_DIR$/exercise4" />
+            <option value="$PROJECT_DIR$/exercise4/city_qualities" />
+            <option value="$PROJECT_DIR$/exercise4/music_api_test" />
+            <option value="$PROJECT_DIR$/onlineMusic_2" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

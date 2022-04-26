@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_main"
+        android:icon="@drawable/headphone"
+        android:enabled="true"
+        android:title="个人中心"
+        />
+    <item
+        android:id="@+id/tab_list"
+        android:icon="@drawable/search"
+        android:enabled="true"
+        android:title="默认列表"
+        />
+    <item
+        android:id="@+id/tab_music"
+        android:icon="@null"
+        android:enabled="true"
+        android:title="" />
+    <item
+        android:id="@+id/tab_toplist"
+        android:icon="@drawable/message"
+        android:enabled="true"
+        android:title="排行榜"
+        />
+    <item
+        android:id="@+id/tab_about"
+        android:icon="@drawable/headphone2"
+        android:enabled="true"
+        android:title="关于APP"
+        />
+</menu>

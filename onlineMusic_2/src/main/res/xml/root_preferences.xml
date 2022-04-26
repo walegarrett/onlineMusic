@@ -1,0 +1,51 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:icon="@android:drawable/ic_menu_preferences"
+        app:title="个人信息设置">
+
+        <EditTextPreference
+            app:key="setNickName"
+            app:title="您的昵称" />
+
+        <EditTextPreference
+            app:key="userInfo"
+            app:summary="我的个人简介。。。"
+            app:title="用户个人简介" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@android:drawable/ic_menu_edit"
+        app:title="APP个性设置">
+        <Preference
+            app:key="theme"
+            app:summary="选择您喜欢的主题"
+            app:title="主题设置" />
+        <ListPreference
+            app:defaultValue="中号字体"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="textSize"
+            app:title="字体大小设置"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:icon="@android:drawable/ic_menu_help"
+        app:title="帮助与反馈">
+        <Preference
+            app:key="help"
+            app:title="帮助信息" />
+
+        <Preference
+            app:key="setHelp"
+            app:summary="您也可以点击自定义其他的帮助信息哦！"
+            app:title="自定义帮助信息" />
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

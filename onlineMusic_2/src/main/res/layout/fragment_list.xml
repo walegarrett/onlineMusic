@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginBottom="57dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background2"
+    tools:context=".fragment.ListFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--这里需要添加layout_behavior用来防止recyclerView遮挡toolbar-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/musicRecyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="70dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@mipmap/top" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="0dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/musicImageView"
+            android:layout_width="63dp"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@mipmap/music1" />
+
+        <com.example.onlineMusic_2.ui.ScrollingTextView
+            android:id="@+id/musicTitle"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toStartOf="@+id/musicLastImageView"
+            android:layout_toLeftOf="@+id/musicLastImageView"
+            android:layout_toEndOf="@+id/musicImageView"
+            android:layout_toRightOf="@+id/musicImageView"
+            android:text="歌曲名"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textIsSelectable="true"
+            android:scrollHorizontally="true"
+            android:textColor="#DEF2F4"
+            android:textSize="18sp" >
+        </com.example.onlineMusic_2.ui.ScrollingTextView>
+
+        <TextView
+            android:id="@+id/musicPerson"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@+id/musicImageView"
+            android:layout_toRightOf="@+id/musicImageView"
+            android:text="演唱者"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textIsSelectable="true"
+            android:textColor="#B6D9E8" />
+
+        <ImageView
+            android:id="@+id/musicLastImageView"
+            android:layout_width="58dp"
+            android:layout_height="41dp"
+            android:layout_alignEnd="@+id/musicPlayImageView"
+            android:layout_alignRight="@+id/musicPlayImageView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@mipmap/pre" />
+
+        <ImageView
+            android:id="@+id/musicPlayImageView"
+            android:layout_width="59dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginLeft="71dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/musicNextImageView"
+            android:layout_toLeftOf="@+id/musicNextImageView"
+            app:srcCompat="@mipmap/play" />
+
+        <ImageView
+            android:id="@+id/musicNextImageView"
+            android:layout_width="54dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@mipmap/next" />
+
+    </RelativeLayout>
+</RelativeLayout>
